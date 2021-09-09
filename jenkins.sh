@@ -18,3 +18,8 @@ stat $?
 
 sudo apt-get install jenkins
 stat $?
+
+systemctl enable jenkins
+
+systemctl status jenkins
+
