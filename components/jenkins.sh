@@ -1,5 +1,7 @@
 #! /bin/bash
 
+source components/common.sh
+
 Head "Updating packages"
 apt update -y
 stat $?
