@@ -23,3 +23,4 @@ systemctl enable jenkins
 
 systemctl status jenkins
 
+cat /var/lib/jenkins/secrets/initialAdminPassword
