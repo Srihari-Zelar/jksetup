@@ -22,5 +22,5 @@ systemctl start jenkins
 systemctl enable jenkins
 systemctl status jenkins
 
-Head "password of the jenkins page"
+Head "Password of the jenkins page"
 cat /var/lib/jenkins/secrets/initialAdminPassword
