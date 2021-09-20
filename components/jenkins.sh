@@ -5,16 +5,13 @@ source components/common.sh
 Head "Updating packages"
 apt update -y
 
-Head "Debian package repository of Jenkins to automate installation and upgrade"
-wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
-sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
-
 Head "Install Java"
 sudo apt install openjdk-8-jre-headless -y
 sudo apt install openjdk-8-jdk-headless -y
 
-Head "Install Maven"
-sudo apt install maven -y
+Head "Debian package repository of Jenkins to automate installation and upgrade"
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 
 Head "Installing Jenkins"
 sudo apt-get update -y
